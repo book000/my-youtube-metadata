@@ -15,6 +15,11 @@
 - 日本語と英数字の間には半角スペースを入れる。
 
 ## プロジェクト概要
+Stores and manages YouTube video metadata including tracks information.
+
+### 技術スタック
+- **言語**: JSON
+- **パッケージマネージャー**: none
 
 ## コーディング規約
 - フォーマット: 既存設定（ESLint / Prettier / formatter）に従う。
@@ -22,9 +27,11 @@
 - コメント言語: 日本語
 - エラーメッセージ: 英語
 
-## 開発コマンド
+### 開発コマンド
 ```bash
-# README を確認してください
+# install
+N/A - data repository
+
 ```
 
 ## 注意事項
@@ -33,3 +40,6 @@
 - 既存のプロジェクトルールがある場合はそれを優先する。
 
 ## リポジトリ固有
+- **purpose**: Data storage repository
+- **content_type**: YouTube video metadata in JSON format
+- **data_structure**: Map of video IDs to track info (track, artist, album, albumArtist)

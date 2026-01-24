@@ -25,3 +25,6 @@
 - ログに機密情報を出力しない。
 
 ## リポジトリ固有
+- **purpose**: Data storage repository
+- **content_type**: YouTube video metadata in JSON format
+- **data_structure**: Map of video IDs to track info (track, artist, album, albumArtist)

@@ -1,6 +1,7 @@
 # GitHub Copilot Instructions
 
 ## プロジェクト概要
+Stores and manages YouTube video metadata including tracks information.
 
 ## 共通ルール
 - 会話は日本語で行う。
@@ -10,7 +11,8 @@
 - 既存のプロジェクトルールがある場合はそれを優先する。
 
 ## 技術スタック
-- パッケージマネージャー: pnpm 優先（ロックファイルに従う）。
+- 言語: JSON
+- パッケージマネージャー: none
 
 ## コーディング規約
 - フォーマット: 既存設定（ESLint / Prettier / formatter）に従う。
@@ -21,9 +23,11 @@
 - TypeScript 使用時は strict 前提とし、`skipLibCheck` で回避しない。
 - 関数やインターフェースには docstring（JSDoc など）を記載する。
 
-## 開発コマンド
+### 開発コマンド
 ```bash
-# README を確認してください
+# install
+N/A - data repository
+
 ```
 
 ## テスト方針
@@ -34,5 +38,10 @@
 - ログに機密情報を出力しない。
 
 ## ドキュメント更新
+- 実装確定後、同一コミットまたは追加コミットで更新する。
+- README、API ドキュメント、コメント等は常に最新状態を保つ。
 
 ## リポジトリ固有
+- **purpose**: Data storage repository
+- **content_type**: YouTube video metadata in JSON format
+- **data_structure**: Map of video IDs to track info (track, artist, album, albumArtist)
